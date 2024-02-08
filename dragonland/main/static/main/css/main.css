@@ -1,0 +1,348 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10.582vw;
+    z-index: 3;
+}
+/* !index.html*/
+.welcome{
+    display: flex;
+    color: white;
+    font-family: "Kharkiv";
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-h3);
+}
+.welcome_h3{
+    padding: 6.28vw 0px 1.984vw;
+    text-align: center;
+    border-style: none none solid none;
+    border-color: var(--red);
+    border-width: 0.198vw;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-left{
+    flex-direction: row;
+    padding: 6.614vw 0px 0px;
+    column-gap: 8.399vw;
+}
+.about-right{
+    flex-direction: row-reverse;
+    padding: 3.108vw 0px 0px;
+}
+.about-title{
+    color: var(--green_light);
+    font-family: "Wentrisor";
+    font-size: var(--font-size-h1);
+    display: flex;
+    align-self: center;
+}
+.about-desc{
+    width: 42vw;
+    color: white;
+    font-family: "Kharkiv";
+    line-height: 1.3;
+}
+.about_p{
+    padding: 1.98vw 0px;
+}
+/* !dragons.html*/
+.title{
+    text-align: center;
+    font-family: "Wentrisor";
+    padding-top: 3.97vw;
+}
+.subtitle{
+    color: white;
+    font-family: "Kharkiv";
+    text-align: center;
+    padding: 2.78vw 0px;
+}
+.gallery-dragons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.65vw 0px;
+    color: white;
+    font-family: "Kharkiv";
+}
+.gallery-dragons-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.32vw 0px;
+}
+.gallery-one{
+    display: flex;
+    flex-direction: column;
+    gap: 1.98vw 0px;
+}
+.gallery-photo{
+    width: 24.5vw;
+    height: 24.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    transition: .5s ease;
+}
+.gallery-photo:hover{
+    transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+}
+.button-gallery{
+    display: none;
+}
+.gallery-photo:hover .button-gallery{
+    display: block !important;
+}
+/* !dragon.html */
+.dragon-img{
+    /* height: 610px; */
+    height: 39.68vw;
+    margin-top: 5.29vw;
+    object-fit: cover;
+    object-position: top; /* Обрізати з верхньої частини зображення */
+}
+.desc_dragon{
+    color: white;
+    font-family: "Kharkiv";
+    padding-top: 3.97vw;
+}
+.desc_dragon-p{
+    line-height: 1.3;
+    padding: 1.72vw 0px;
+}
+/* !to-do */
+.doing{
+    color: white;
+    font-family: "Kharkiv";
+}
+.doing-main-title1{
+    text-align: center;
+    margin: 5.291vw 0px;
+}
+.doing-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.32vw;
+    row-gap: 3.968vw;
+}
+.doing-one{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.25vw;
+    align-content: flex-start;
+}
+.img-icon-doing{
+    width: 4.828vw;
+    height: 3.97vw;
+}
+.doing-title{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.852vw;
+    align-items: center;
+}
+.doing-p{
+    line-height: 1.4;
+}
+.doing-main-title2{
+    text-align: center;
+    margin: 3.97vw 0px 2.25vw;
+}
+.price{
+    padding: 2.78vw 0px;
+    border-style: solid none;
+    border-color: var(--red);
+    border-width: 0.198vw;
+}
+.price-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.98vw 2.646vw;
+}
+.price-main_h4{
+    padding: 0px 0px 0.661vw;
+}
+.attention{
+    padding: 1.98vw 0px 0px;
+    color: var(--red);
+}
+/* !reserve.html */
+.reserve{
+    color: white;
+    font-family: "Kharkiv";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.4;
+    margin-top: 6.217vw;
+}
+.reserve_img{
+    background-image: url("../img/park-reserve.png");
+    background-position: center;
+    background-size: cover;
+    width: 32.07vw;
+}
+.reserve-desc{
+    width: 40.08vw;
+}
+.reserve-desc-title{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.728vw;
+    align-items: center;
+    align-content: center;
+}
+.reserve-tick{
+    width: 0.595vw;
+    height: 1.19vw;
+}
+.reserve-desc-title_p{
+    padding: 1.984vw 0px;
+}
+.reserve-desk_button{
+    display: flex;
+    justify-content: space-between;
+}
+/* !map.html */
+.img_map{
+    margin-top: 4.762vw;
+    width: 78.84vw;
+}
+
+.legend{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 7.93vw;
+    /* column-gap: 20px; */
+}
+.legend-title{
+    font-family: "Wentrisor";
+    display: flex;
+    align-items: center;
+}
+.legend-items{
+    font-family: "Kharkiv";
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 5fr);
+    align-items: center;
+    gap: 1vw 2vw;
+}
+/* !tickets.html */
+.ticket{
+    font-family: "Kharkiv";
+}
+.ticket-start{
+    text-align: center;
+    color: white;
+    margin-top: 5.291vw;
+}
+.ticket-start_h3{
+    padding: 3.97vw 7.011vw;
+}
+.form{
+    color: white;
+    border-style: solid none solid;
+    border-color: var(--red);
+    border-width: 0.198vw;
+}
+.form-title{
+    padding: 2.778vw 0px;
+}
+.form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.66vw;
+    padding-bottom: 2.778vw;
+}
+.form-item{
+    border-style: none none solid;
+    border-color: var(--red);
+    border-width: 0.19vw;
+    padding-bottom: 0.33vw;
+}
+.form-number{
+    border-style: solid;
+    border-color: var(--green_light);
+    border-width: 0.198vw;
+    padding: 0.463vw;
+}
+.form-item-all{
+    width: 85%;
+}
+.form-item::placeholder{
+    color:white;
+}
+.select option{
+    background-color: var(--black);
+}
+.result-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0px 0.661vw;
+}
+.button-form-tickets{
+    margin: 1.65vw 0px 1.65vw;
+}
+.ticket-end-p{
+    color: white;
+    margin: 1.65vw 0px 0px;
+}
+.form-time{
+    width: 20%;
+}
+.error-message {
+    color: var(--red);
+    font-size: 0.66vw;
+}
+.container-popup{
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--black);
+    flex-direction: column;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 118px 160px 118px;
+    width: 70%;
+    gap: 48px 0px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--red);
+    border-width: 1px;
+    transition: transform 0.4s, top 0.4s;
+}
+.container-popup-icon_close{
+    position: absolute;
+    top:36px;
+    right: 36px;
+    border-style: solid;
+    border-color: var(--red);
+    border-width: 1px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 500ms;
+    cursor: pointer;
+    /* z-index: 99999; */
+}
+.container-popup-icon_close:hover{
+    background-color: var(--red_dark);
+    transition: 500ms;
+}
+.container-popup-icon_close:active{
+    background-color: var(--red);
+}

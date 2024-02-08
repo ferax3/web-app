@@ -1,0 +1,102 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}DragonLand - Головна{% endblock %}
+
+    {% block img-bg %}
+    <img
+      src="{% static 'main/img/fire/fire-holovna-left1.png' %}"
+      alt="fire"
+      class="fire fire-holovna-left1"
+    />
+    <img
+      src="{% static 'main/img/fire/fire-holovna-right1.png' %}"
+      alt="fire"
+      class="fire fire-holovna-right1"
+    />
+    <img
+      src="{% static 'main/img/fire/fire-holovna-left2.png' %}"
+      alt="fire"
+      class="fire fire-holovna-left2"
+    />
+    <img
+      src="{% static 'main/img/fire/fire-holovna-right2.png' %}"
+      alt="fire"
+      class="fire fire-holovna-right2"
+    />
+    {% endblock %}
+
+    {% block add-header %}
+      <section class="header_desc">
+        <h1 class="header_desc-title">DragonLand -</h1>
+        <p class="header_desc-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
+    {% endblock %}
+
+{% block content %}
+      <section class="welcome">
+        <h3 class="welcome_h3">
+          Ласкаво просимо на наш веб-портал, присвячений чудовим і загадковим
+          створінням - драконам! Тут ви знайдете захоплюючу інформацію про цих
+          величних істот, які завжди привертали увагу та захоплювали уяву людей
+          різних культур і епох.
+        </h3>
+      </section>
+      <section class="about about-left">
+        <div class="about-title">
+          <h1>Про драконів</h1>
+        </div>
+        <div class="about-desc">
+          <h3 class="h3">Хто такі дракони?</h3>
+          <p class="p about_p">
+            Дракони - це могутні магічні ящіроподібні істоти, яких досить
+            нелегко заховати чи приручити. Вони здатні вивергати полум’я, високо
+            літати на великих крилах. До драконів в дикій природі не варто
+            наближатися нікому, окрім кваліфікованих людей, адже вони можуть
+            бути агресивними та завдати шкоди.
+          </p>
+          <h3 class="h3">Різноманіття видів драконів</h3>
+          <p class="p about_p">
+            Драконяча шкура, кров, серце, печінка, ріг дракона відомі потужними
+            магічними властивостями, однак це сприяє винищенню драконів в дикій
+            природі. Існує десять видів чистопородних порід драконів, і щоб
+            зберегти усі з них було створено наш Заповідник.<br />
+            Звісно, різновидів драконів значно більше, які утворені внаслідок
+            схрещення. Деякі цікаві породи також можна знайти у нашому
+            заповіднику, а які саме - можете дізнатися самі :)
+          </p>
+          <a href="dragons.html" class="button">
+            Детальніше про драконів
+          </a>
+        </div>
+      </section>
+      <section class="about about-right">
+        <div class="about-title">
+          <h1>Про заповідник</h1>
+        </div>
+        <div class="about-desc">
+          <h3 class="h3">Заповідник драконів</h3>
+          <p class="p about_p">
+            Ми маємо на меті вирощення драконів в природніх умовах, де ніщо не
+            загрожує їхньому вимиранню. Завдяки цьому дракони більш спокійні і
+            ми можемо запропонувати нашим відвідувачам спокійно спостерігати за
+            ними, або навіть покататися верхи на прирученому драконі разом з
+            нашим спеціалістом.
+          </p>
+          <h3 class="h3">Відвідування заповідника</h3>
+          <p class="p about_p">
+            Відвідувати заповідник самотужки заборонено, адже не можна виключати
+            того, що дракони становлять небезпеку відвідувачам, а також
+            можливіть нанесення шкоди самим драконам. Проте відвідування та
+            спостереження за драконами дозволене в групі з нашим
+            гідом-чарівником.
+          </p>
+          <a href="{% url 'reserve' %}" class="button">
+            Детальніше про заповідник
+          </a>
+        </div>
+      </section>
+{% endblock %}
