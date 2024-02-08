@@ -1,0 +1,44 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}DragonLand - Карта{% endblock %}
+
+    {% block img-bg %}
+    <img
+      src="{% static 'main/img/fire/fire-map-left.png' %}"
+      alt="fire"
+      class="fire fire-map-left"
+    />
+    <img
+      src="{% static 'main/img/fire/fire-map-right.png' %}"
+      alt="fire"
+      class="fire fire-map-right"
+    />
+    {% endblock %}
+
+    {% block add-header %}
+      <h1 class="map-title h1">Карта</h1>
+    {% endblock %}
+
+{% block content %}
+      <img src="{% static 'main/img/map-map.png' %}" alt="map" class="img_map scale-in-ver-top" />
+      <section class="legend">
+        <div class="legend-title">
+          <h1 class="h1 green-light">Легенда карти</h1>
+        </div>
+        <div class="legend-items">
+          <img src="{% static 'main/img/icon/Pin.png' %}" alt="Pin" />
+          <p class="p">Вхід, Магазин</p>
+          <img src="{% static 'main/img/icon/Mountains.png' %}" alt="Mountains" />
+          <p class="p">Гора Ґрінхілл</p>
+          <img src="{% static 'main/img/icon/eggs.png' %}" alt="egg" />
+          <p class="p">Інкубатор</p>
+          <img src="{% static 'main/img/icon/dragon.png' %}" alt="dragon" />
+          <p class="p">Польоти на драконах</p>
+          <img src="{% static 'main/img/icon/Tree.png' %}" alt="Tree" />
+          <p class="p">Парк Драконів</p>
+          <img src="{% static 'main/img/icon/Binocular.png' %}" alt="Binocular" />
+          <p class="p">Спостереження за драконами</p>
+        </div>
+      </section>
+{% endblock %}

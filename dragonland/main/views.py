@@ -6,3 +6,9 @@ def index(request):
 
 def reserve(request):
     return render(request, 'main/reserve.html')
+
+def to_do(request):
+    return render(request, 'main/to-do.html')
+
+def map(request):
+    return render(request, 'main/map.html')
