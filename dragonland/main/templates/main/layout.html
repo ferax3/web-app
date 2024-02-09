@@ -19,7 +19,7 @@
         <input type="checkbox" id="check" />
         <ul class="nav-list">
           <li><a href="{% url 'home' %}" class="nav-page">Головна</a></li>
-          <li><a href="dragons.html" class="nav-page">Дракони</a></li>
+          <li><a href="{% url 'dragons' %}" class="nav-page">Дракони</a></li>
           <li>
             <img
               src="{% static 'main/img/icon/logo-header.png' %}"
@@ -62,16 +62,16 @@
       <ul class="footer-col">
         <li><a href="{% url 'home' %}" class="footer-item">Головна</a></li>
         <li class="footer-col_ul-center">
-          <a href="dragons.html" class="footer-item">Дракони</a>
+          <a href="{% url 'dragons' %}" class="footer-item">Дракони</a>
         </li>
         <li><a href="{% url 'reserve' %}" class="footer-item">Про заповідник</a></li>
       </ul>
       <ul class="footer-col">
         <li>
-          <a href="to-do.html" class="footer-item">Відвідування заповідника</a>
+          <a href="{% url 'to_do' %}" class="footer-item">Відвідування заповідника</a>
         </li>
         <li class="footer-col_ul-center">
-          <a href="map.html" class="footer-item">Карта заповідника</a>
+          <a href="{% url 'map' %}" class="footer-item">Карта заповідника</a>
         </li>
         <li><a href="tickets.html" class="footer-item">Квитки</a></li>
       </ul>

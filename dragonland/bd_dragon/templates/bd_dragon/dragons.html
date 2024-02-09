@@ -1,0 +1,31 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}DragonLand - Дракони{% endblock %}
+
+{% block content %}
+<h1 class="title green-light h1">Дракони</h1>
+      <h3 class="subtitle h3">
+        Тут перелічені найвідоміші породи драконів. У нашому заповіднику
+        знаходяться лише деякі з них, адже вони потребують багато території та
+        відповідних природніх умов.
+      </h3>
+      <section class="gallery-dragons">
+          {% if dragon %}
+            {% for el in dragon %}
+            <div class="gallery-one">
+              <div class="{{ el.bg_photo }} gallery-photo">
+                <a href="{% url 'dragon-detail' el.id %}"
+                  class="button button-gallery"
+                >
+                  Детальніше
+                </a>
+              </div>
+              <h4 class="h4">{{ el.name }}</h4>
+            </div>
+            {% endfor %}
+          {% else %}
+          <p>У вас немає записів!</p>
+          {% endif %}
+      </section>
+{% endblock %}

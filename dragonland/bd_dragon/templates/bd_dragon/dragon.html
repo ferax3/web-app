@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ information.name }}{% endblock %}
+
+{% block content %}
+      <section class="desc_dragon">
+        <h2 class="h2">{{ information.name }}</h2>
+        <p class="desc_dragon-p p">
+            {{ information.description }}
+        </p>
+        <a href="{% url 'dragons' %}" class="button">
+          Назад до драконів
+        </a>
+      </section>
+{% endblock %}
