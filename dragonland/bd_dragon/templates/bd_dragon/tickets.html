@@ -32,61 +32,21 @@
 
       <form method="post" class="form scale-in-ver-top">
         {% csrf_token %}
+
+
+
+
         <h3 class="h3 form-title">Персональна інформація</h3>
         <div class="form-row p">
-          <input
-            type="text"
-            placeholder="Ім'я"
-            class="form-item form-item-all input-field"
-          />
-          <input
-            type="text"
-            placeholder="Прізвище"
-            class="form-item form-item-all input-field"
-          />
-          <input
-            type="email"
-            placeholder="e-mail"
-            class="form-item form-item-all input-field"
-          />
-
+          {{ form.first_name }}
+          {{ form.last_name }}
+          {{ form.email }}
         </div>
         <h3 class="h3 form-title">Інформація про відвідування</h3>
         <div class="form-row p">
-          <select
-            name="select_dragon"
-            class="select form-item form-item-all input-field">
-            <option value="" disabled selected>Оберіть дракона</option>
-            <option>Норвезький хребтоспин</option>
-            <option>Китайська метеорка</option>
-            <option>Гебридій чорний</option>
-            <option>Звичайна зелена валійка</option>
-            <option>Опалоок антиподібний</option>
-            <option>Шведська короткокрилка</option>
-            <option>Румунський довгоріг</option>
-            <option>Угорська рогохвістка</option>
-            <option>Український залізопуз</option>
-          </select>
-                      <label id="form-date">
-            Оберіть дату візиту:
-            <input
-              type="date"
-              name="date_visit"
-              class="form-item input-field"
-              id="datePicker"
-              onchange="restrictDays()"
-            />
-          </label>
-          <label id="form-time"
-            >Оберіть час візиту:
-              <input
-              type="time"
-              class="form-item input-field"
-              >
-
-              </input>
-
-          </label>
+          {{ form.dragon }}
+          {{ form.date }}
+          {{ form.time }}
         </div>
         <button
           id="button-form"

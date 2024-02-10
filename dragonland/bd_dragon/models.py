@@ -16,3 +16,29 @@ class Dragon(models.Model):
     class Meta:
         verbose_name = 'Дракон'
         verbose_name_plural = 'Дракони'
+
+class Visitor(models.Model):
+    id = models.AutoField('ID_відвідувача', primary_key=True)
+    first_name = models.CharField('Ім\'я', max_length=20)
+    last_name = models.CharField('Прізвище', max_length=20)
+    email = models.EmailField('E-mail', max_length=50)
+
+    def __str__(self):
+        return self.last_name
+
+    class Meta:
+        verbose_name = 'Відвідувач'
+        verbose_name_plural = 'Відвідувачі'
+
+class Visit(models.Model):
+    date = models.DateField('Дата')
+    time = models.TimeField('Час')
+    visitor = models.ForeignKey(Visitor, on_delete=models.CASCADE)
+    dragon = models.ForeignKey(Dragon, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.date} {self.time} - {self.visitor.first_name} {self.visitor.last_name}'
+
+    class Meta:
+        verbose_name = 'Візит'
+        verbose_name_plural = 'Візит'
