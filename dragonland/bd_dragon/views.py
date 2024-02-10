@@ -11,3 +11,6 @@ class DragonDetailView(DetailView):
     model = Dragon
     template_name = 'bd_dragon/dragon.html'
     context_object_name = 'information'
+
+def tickets(request):
+    return render(request, 'bd_dragon/tickets.html')

@@ -9,6 +9,7 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
     <script src="https://use.fontawesome.com/08c46a2805.js"></script>
+    {% block script-form %}{% endblock %}
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
 </head>
 <body>
@@ -41,7 +42,7 @@
               <li><a href="{% url 'map' %}" class="nav-page">Карта заповідника</a></li>
             </ul>
           </li>
-          <li><a href="tickets.html" class="nav-page">Квитки</a></li>
+          <li><a href="{% url 'tickets' %}" class="nav-page">Квитки</a></li>
           <label for="check" class="close-menu"
             ><i class="fa fa-times" aria-hidden="true"></i
           ></label>
