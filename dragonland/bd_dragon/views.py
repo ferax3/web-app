@@ -13,6 +13,8 @@ class DragonDetailView(DetailView):
     template_name = 'bd_dragon/dragon.html'
     context_object_name = 'information'
 
+def answer(request):
+    return render(request, 'bd_dragon/answer.html')
 def tickets(request):
     if request.method == 'POST':
         form = VisitForm(request.POST)
@@ -32,7 +34,7 @@ def tickets(request):
             visit.visitor = visitor
             visit.save()
 
-            return redirect('home')  # Перенаправляємо користувача на іншу сторінку після успішного збереження
+            return redirect('answer')  # Перенаправляємо користувача на іншу сторінку після успішного збереження
     else:
         form = VisitForm()
 

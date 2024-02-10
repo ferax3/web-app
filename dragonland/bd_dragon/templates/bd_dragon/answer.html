@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Оплата{% endblock %}
+
+{% block content %}
+      <section class="answer_ticket">
+        <h2 class="h2">Квитки заброньовано!</h2>
+        <p class="answer_ticket_p p">
+            Дякуємо Вам за оформлення квитків. Підтвердження броні прийде Вам на пошту протягом кількох хвилин. Будь ласка, здійсніть оплату протягом 24-х годин, після чого ви отримаєте квитки на Вашу пошту.
+        </p>
+        <div class="buttons-answer">
+            <a href="" class="button">
+                Оплатити зараз
+              </a>
+              <a href="{% url 'home' %}" class="button">На головну</a>
+        </div>
+      </section>
+{% endblock %}

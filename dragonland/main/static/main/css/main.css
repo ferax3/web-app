@@ -116,8 +116,9 @@
     /* height: 610px; */
     height: 39.68vw;
     margin-top: 5.29vw;
-    object-fit: cover;
-    object-position: top; /* Обрізати з верхньої частини зображення */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 .desc_dragon{
     color: white;
@@ -314,45 +315,22 @@
     color: var(--red);
     font-size: 0.66vw;
 }
-.container-popup{
-    color: white;
-    display: none;
-    align-items: center;
-    justify-content: center;
+/* !answer.html */
+.answer_ticket{
+    margin: 7.28vw 10.58vw 0px;
     text-align: center;
-    background-color: var(--black);
+    display: flex;
     flex-direction: column;
-    width: 400px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 118px 160px 118px;
-    width: 70%;
-    gap: 48px 0px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: var(--red);
-    border-width: 1px;
-    transition: transform 0.4s, top 0.4s;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: "Kharkiv";
 }
-.container-popup-icon_close{
-    position: absolute;
-    top:36px;
-    right: 36px;
-    border-style: solid;
-    border-color: var(--red);
-    border-width: 1px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: 500ms;
-    cursor: pointer;
-    /* z-index: 99999; */
+.answer_ticket_p{
+    padding: 2.78vw 0px;
 }
-.container-popup-icon_close:hover{
-    background-color: var(--red_dark);
-    transition: 500ms;
-}
-.container-popup-icon_close:active{
-    background-color: var(--red);
+.buttons-answer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.78vw;
 }
