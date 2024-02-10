@@ -29,7 +29,7 @@
             />
           </li>
           <li>
-            <a href="#" class="nav-page">Заповідник</a>
+            <a href="#" class="nav-page zapovidnyk">Заповідник</a>
             <ul class="dropdown">
               <li>
                 <a href="{% url 'reserve' %}" class="nav-page">Про заповідник</a>
@@ -59,6 +59,8 @@
         {% block content %}
         {% endblock %}
     </main>
+    {% block gallery-photo %}
+    {% endblock %}
         <footer class="footer">
       <ul class="footer-col">
         <li><a href="{% url 'home' %}" class="footer-item">Головна</a></li>
