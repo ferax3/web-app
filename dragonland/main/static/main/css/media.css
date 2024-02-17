@@ -1,8 +1,9 @@
-.main-gallery{
-    padding-top: 70px;
-    width: 100%;
-}
+@media (max-width: 1000px) {
+    #grid{
+        display: none;
+    }
 
+}
 
 
 
